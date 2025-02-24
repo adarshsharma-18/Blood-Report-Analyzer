@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
             let data = await response.json();
 
             if (response.ok) {
-                uploadStatus.innerHTML = "<span style='color:green;'>File uploaded successfully!</span>";
+                uploadStatus.innerHTML = "<span style='color:yellow;'>File uploaded successfully!</span>";
 
                 // Open the extracted table in a new tab
                 let newTab = window.open();
