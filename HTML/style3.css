@@ -1,0 +1,151 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Gradient Background */
+body {
+    display: flex;
+    height: 100vh;
+    background: linear-gradient(135deg, #3498db, #8e44ad);
+}
+
+/* Dashboard Layout */
+.dashboard-container {
+    display: flex;
+    width: 100%;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background: #2c3e50;
+    padding: 20px;
+    color: white;
+    min-height: 100vh;
+    box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 20px 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 12px;
+    border-radius: 5px;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.sidebar ul li a:hover, .sidebar ul li .active {
+    background: #3498db;
+}
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+/* Dashboard Card */
+.dashboard-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.dashboard-card h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.dashboard-card p {
+    color: #777;
+    margin-bottom: 20px;
+}
+
+/* File Upload Input */
+input[type="file"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: white;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+/* Upload Button */
+button {
+    width: 100%;
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #2980b9;
+}
+
+/* Logout Button */
+.logout-btn {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    background: red;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.logout-btn:hover {
+    background: darkred;
+}
+
+/* Upload Status */
+#uploadStatus {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Blood Report Analysis</title>
+    <link rel="stylesheet" href="C:\Users\Lenovo\OneDrive\Desktop\SRM classes\HTML\style3.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <h2>Dashboard</h2>
+            <ul>
+                <li><a href="#instructions" class="active">Instructions</a></li>
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#upload">Upload Report</a></li>
+                <li><a href="#blood-info">General Info</a></li>
+                <li><a href="#references">References</a></li>
+                <li><a href="#terminology">Terminology</a></li>
+                <li><a href="#health-practices">Healthy Practices & Yoga</a></li>
+                <li><a href="#logout" class="logout-btn">Logout</a></li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <section id="instructions">
+                <h2>Welcome to the Blood Report Analysis System(REALLY??)</h2>
+                <p>To get started, follow these steps:</p>
+                <ul>
+                    <li>Go to "Upload Report" and submit your blood test PDF.</li>
+                    <li>View the extracted and summarized report.</li>
+                    <li>Check "General Info" for explanations of values.</li>
+                    <li>Explore "Healthy Practices & Yoga" for lifestyle improvements.</li>
+                </ul>
+            </section>
+
+            <section id="upload" style="display:none;">
+                <h2>Upload Your Blood Report</h2>
+                <form id="uploadForm">
+                    <input type="file" id="fileInput" accept="application/pdf" required>
+                    <button type="submit">Upload Report</button>
+                </form>
+                <div id="uploadStatus"></div>
+                <h3>Report Summary</h3>
+                <div id="summary"></div>
+            </section>
+
+            <section id="blood-info" style="display:none;">
+                <h2>Understanding Blood Reports</h2>
+                <p>Blood tests and reports help provide a snapshot of your overall health by analyzing different components of your blood, allowing doctors to detect potential issues like infections, anemia, bleeding disorders, or problems with your immune system, and to monitor chronic conditions or the effectiveness of treatments.</p>
+                <br>
+                <h3> What general blood reports include</h3>
+                 Red blood cell count (RBC): Indicates the number of oxygen-carrying red blood cells. 
+                 <li>White blood cell count (WBC): Shows the number of white blood cells involved in fighting infections.</li> 
+                 <li>Platelet count: Measures the number of platelets responsible for blood clotting.</li> 
+                 <li>Hemoglobin level: The amount of protein in red blood cells that carries oxygen.</li> 
+                 <li>Hematocrit level: The percentage of red blood cells in the blood.</li> 
+              </section>
+
+            <section id="health-practices" style="display:none;">
+                <h2>Healthy Practices & Yoga</h2>
+                <p>Learn about the benefits of a healthy lifestyle and simple yoga poses.</p>
+                <p>Yoga increases blood flow by incorporating movements like stretching, twisting, and inversions which compress and decompress veins, effectively pushing blood through the circulatory system</p>
+                <br>
+                <h3>Basic Yoga Poses</h3>
+                <ul>
+                    <li><strong>Tadasana (Mountain Pose)</strong> - Improves posture and balance.</li>
+                    <li><strong>Vrikshasana (Tree Pose)</strong> - Enhances concentration.</li>
+                    <li><strong>Bhujangasana (Cobra Pose)</strong> - Strengthens the spine.</li>
+                    <li><strong>Shavasana (Corpse Pose)</strong> - Reduces stress and promotes relaxation.</li>
+                </ul>
+            </section>
+        </main>
+    </div>
+    <script src="script3.js"></script>
+</body>
+</html>
